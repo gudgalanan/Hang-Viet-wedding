@@ -1,0 +1,279 @@
+@import "./variables";
+
+// <!-- START BANNER-->
+#fhm-banner {
+  position: relative;
+  .container-fluid {
+    padding: 0;
+    .banner-bg {
+      .banner-bg-decor {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 713px;
+        height: 109px;
+        background-color: $bg-body;
+        border-top-right-radius: 100px;
+      }
+    }
+  }
+  .banner-heading {
+    position: absolute;
+    top: 290px;
+    h1 {
+      white-space: nowrap;
+      color: $text-white;
+      font-family: $font-family;
+      font-size: 48px;
+      font-weight: 275;
+      line-height: 74px; /* 154.167% */
+      letter-spacing: 4.8px;
+      text-transform: uppercase;
+    }
+  }
+}
+// <!-- END BANNER-->
+
+// <!-- START PROJECT-->
+#fhm-project {
+  margin-top: 100px;
+  .project-heading {
+    margin-bottom: 70px;
+    h3 {
+      color: $text-white;
+      text-align: center;
+      /* SemiBold */
+      font-family: $font-family2;
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 40px; /* 117.647% */
+      letter-spacing: 0.085px;
+      margin-bottom: 29px;
+    }
+    .project-heading-list {
+      justify-content: center;
+      .project-list-item {
+        gap: 80px;
+        padding: 0 15px;
+        border-bottom: 1px solid $bg-feedback;
+        a {
+          white-space: nowrap;
+          margin-bottom: 8px;
+          color: $text-white;
+          font-family: $font-family;
+          font-size: 14px;
+          font-weight: 200;
+          line-height: 28px; /* 200% */
+          letter-spacing: 0.021px;
+          margin: 0;
+          padding-bottom: 8px;
+          @extend .hover-link;
+        }
+        a.active {
+          border-bottom: 2px solid $highlight-color;
+        }
+      }
+    }
+  }
+  .project-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 50px;
+    .project-item {
+      .project-item-img {
+        position: relative;
+        a {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: block;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            @extend .hover-img;
+          }
+        }
+        .project-item-img-name {
+          position: absolute;
+          bottom: -27px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 217px;
+          padding: 20px 0px;
+          background-color: $bg-body;
+          border-radius: 10px 10px 0 0;
+          a {
+            text-align: center;
+            white-space: nowrap;
+            color: $text-white;
+            font-family: $font-family;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 14px; /* 100% */
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .project-item-info {
+        margin: 41px 0 12px;
+        gap: 43px;
+        justify-content: center;
+        span {
+          color: $text-project;
+          font-family: $font-helvetica;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0.025px;
+        }
+      }
+      .project-item-desc {
+        padding: 0 25px;
+        p {
+          color: $text-white;
+          text-align: center;
+          font-family: $font-family;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 175% */
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .project-btn {
+    margin-top: 65px;
+    border: 1px solid #232222;
+    a {
+      color: $text-white;
+      text-align: center;
+      font-family: $font-family;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      display: block;
+      @extend .hover-button2;
+    }
+  }
+}
+// <!-- END PROJECT-->
+
+// RESPONSIVE
+@media only screen and (max-width: 1199px) {
+  #fhm-banner {
+    .banner-heading {
+      top: 30%;
+      transform: translate(-50%);
+      left: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  #fhm-banner {
+    .banner-bg-decor {
+      display: none;
+    }
+  }
+  #fhm-project {
+    margin-top: 50px;
+    .project-heading {
+      margin-bottom: 21px;
+    }
+    .project-main {
+      row-gap: 21px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  #fhm-banner {
+    .banner-heading {
+      h1 {
+        white-space: nowrap;
+      }
+    }
+  }
+  #fhm-project {
+    .project-heading .project-heading-list .project-list-item {
+      gap: 40px;
+      padding: 0;
+    }
+    .project-main {
+      column-gap: 20px;
+      .project-item {
+        .project-item-img .project-item-img-name {
+          bottom: -19px;
+          padding: 13px 26px 0;
+          max-width: 100%;
+          a {
+            font-size: 10px;
+          }
+        }
+        .project-item-info {
+          margin: 30px 0 12px;
+          justify-content: space-between;
+          gap: 0;
+        }
+        .project-item-desc {
+          padding: 0 10px;
+          p {
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #fhm-project {
+    .project-heading {
+      h3 {
+        font-size: 30px;
+        margin-bottom: 7px;
+      }
+      .project-heading-list {
+        justify-content: unset;
+        overflow-x: scroll;
+        .project-list-item {
+          gap: 24px;
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .project-main {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 10px;
+      .project-item {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    #fhm-project .project-btn a {
+      font-size: 13px;
+      padding: 15px 0;
+    }
+  }
+}
+@media (max-width: 424px) {
+  #fhm-banner .banner-heading h1 {
+    font-size: 40px;
+  }
+  #fhm-project {
+    .project-main {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 30px;
+    }
+  }
+}

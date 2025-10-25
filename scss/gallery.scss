@@ -1,0 +1,90 @@
+@import "./variables";
+
+// <!-- START CAROUSEL-->
+#fhm-carousel {
+  padding-top: 500px;
+  border-top: 1px solid $border-header;
+
+  .container-fluid {
+    padding: 0;
+
+    .carousel-wrap {
+      display: grid;
+      place-items: center;
+      margin: auto;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .carousel-wrap-list {
+        display: inline-flex;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        animation: scroll 20s linear infinite;
+
+        &:hover {
+          animation-play-state: paused;
+        }
+
+        .carousel-wrap-item {
+          margin-right: 31px;
+          /* Set the gap between slides */
+          overflow: hidden;
+          border-radius: 8px;
+          @extend .hover-img;
+
+          img {
+            aspect-ratio: 267/570;
+            width: 267px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// <!-- END CAROUSEL-->
+
+// RESPONSIVE
+
+@media only screen and (max-width: 1199px) {
+  #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item {
+    margin-right: 20px;
+
+    img {
+      width: 215px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #fhm-carousel {
+    padding-top: 20px;
+
+    .carousel-wrap .carousel-wrap-list .carousel-wrap-item {
+      margin-right: 15px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item {
+    margin-right: 8px;
+
+    img {
+      width: 175px;
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+  #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item {
+    margin-right: 5px;
+
+    img {
+      width: 125px;
+    }
+  }
+
+}

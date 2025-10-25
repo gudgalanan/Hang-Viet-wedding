@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Marcellus&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: Helvetica;
+  src: url(./../assets/Helvetica-Font/Helvetica.ttf) format("truetype");
+}
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(./../assets/Helvetica-Font/Helvetica-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: Helvetica-BoldOblique;
+  src: url(./../assets/Helvetica-Font/Helvetica-BoldOblique.ttf) format("truetype");
+}
+@font-face {
+  font-family: Helvetica-Oblique;
+  src: url(./../assets/Helvetica-Font/Helvetica-Oblique.ttf) format("truetype");
+}
+@font-face {
+  font-family: Helvetica-light;
+  src: url(./../assets/Helvetica-Font/helvetica-light-587ebe5a59211.ttf) format("truetype");
+}
+.h6-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.hover-button, #fhm-contact .contact-wrap .contact-main .contact-submit {
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.hover-button:before, #fhm-contact .contact-wrap .contact-main .contact-submit:before, .hover-button:after, #fhm-contact .contact-wrap .contact-main .contact-submit:after {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.hover-button:before, #fhm-contact .contact-wrap .contact-main .contact-submit:before {
+  left: 0;
+  width: 0;
+  color: white;
+  border: 1px solid white;
+  opacity: 0;
+}
+.hover-button:after, #fhm-contact .contact-wrap .contact-main .contact-submit:after {
+  left: 100%;
+  width: 0;
+  color: white;
+  border: 1px solid white;
+  opacity: 0;
+}
+.hover-button:hover:before, #fhm-contact .contact-wrap .contact-main .contact-submit:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+.hover-button:hover:after, #fhm-contact .contact-wrap .contact-main .contact-submit:hover:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+
+.hover-button2 {
+  position: sticky;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.hover-button2:before, .hover-button2:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #c78410;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.hover-button2:before {
+  opacity: 0.5;
+}
+.hover-button2:after {
+  transition-delay: 0.2s;
+}
+.hover-button2:hover:before, .hover-button2:hover:after {
+  border-color: #c78410;
+  top: 0;
+}
+
+.hover-link {
+  transition: all 0.4s ease;
+}
+.hover-link svg path {
+  transition: all 0.4s ease;
+}
+.hover-link:hover {
+  color: #c78410;
+}
+.hover-link:hover svg path {
+  fill: #c78410;
+}
+
+.hover-img img {
+  transform: scale(1);
+  transition: all 0.75s ease-in-out;
+}
+.hover-img:hover img {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+@keyframes scroll {
+  0% {
+    margin-right: 0;
+    transition: all 0.1s ease;
+  }
+  100% {
+    margin-right: 100%;
+    transition: all 0.1s ease;
+  }
+}
+@keyframes borderRadius {
+  0% {
+    border-top-right-radius: 0px;
+  }
+  25% {
+    border-top-right-radius: 25px;
+  }
+  50% {
+    border-top-right-radius: 50px;
+  }
+  75% {
+    border-top-right-radius: 75px;
+  }
+  100% {
+    border-top-right-radius: 100px;
+  }
+}
+@keyframes overlay {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#fhm-contact {
+  background-image: url(../assets/img/contact/contact-bg.png);
+  background-position: center;
+  border-top: 1px solid #343434;
+}
+#fhm-contact .contact-bg img {
+  aspect-ratio: 4/3;
+}
+#fhm-contact .contact-wrap {
+  padding: 71px 0 100px;
+}
+#fhm-contact .contact-wrap .contact-main .contact-form .form-control::-moz-placeholder {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+#fhm-contact .contact-wrap .placeholder, #fhm-contact .contact-wrap .contact-main .contact-form .form-control::placeholder {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+#fhm-contact .contact-wrap .contact-main {
+  margin-bottom: 129px;
+}
+#fhm-contact .contact-wrap .contact-main .contact-heading h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  /* SemiBold */
+  font-family: "Marcellus", serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px; /* 117.647% */
+  letter-spacing: 0.085px;
+}
+#fhm-contact .contact-wrap .contact-main .contact-heading p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.1px;
+}
+#fhm-contact .contact-wrap .contact-main .contact-form {
+  margin-top: 63px;
+}
+#fhm-contact .contact-wrap .contact-main .contact-form .form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 28px;
+  border-bottom: 0.5px solid #8a8a8a;
+  padding: 0 0 10px;
+  color: #ffffff;
+  font-weight: 200;
+}
+#fhm-contact .contact-wrap .contact-main .contact-form .form-control:focus {
+  border-color: inherit;
+  box-shadow: none;
+  color: #ffffff;
+}
+#fhm-contact .contact-wrap .contact-main .contact-form .form-control-msg {
+  height: 147px;
+  margin: 7px 0 42px;
+  resize: none;
+}
+#fhm-contact .contact-wrap .contact-main .contact-form .form-control-msg:focus {
+  color: #ffffff;
+}
+#fhm-contact .contact-wrap .contact-main .contact-submit {
+  background-color: #c78410;
+  text-align: center;
+  padding: 20px 0;
+}
+#fhm-contact .contact-wrap .contact-main .contact-submit a {
+  color: #ffffff;
+  font-family: Helvetica-light, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+#fhm-contact .contact-wrap .contact-branch {
+  padding: 0 12px;
+  justify-content: space-between;
+  gap: 60px;
+}
+#fhm-contact .contact-wrap .contact-branch .h5, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact .contact-info h5, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-location .location-info h5 {
+  color: #ffffff;
+  font-family: Helvetica-light, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px; /* 155.556% */
+  letter-spacing: 0.027px;
+}
+#fhm-contact .contact-wrap .contact-branch .a, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact .contact-info .contact-address a, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-location .location-info a {
+  color: #ffffff;
+  font-family: Helvetica-light, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.03px;
+}
+#fhm-contact .contact-wrap .contact-branch .branch-detail {
+  padding: 44px 0 44px 50px;
+  border: 1px solid #3f3f3f;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-location {
+  gap: 12px;
+  margin-bottom: 28px;
+}
+#fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact {
+  gap: 12px;
+}
+#fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact .contact-info h5 {
+  margin-bottom: 7px;
+}
+#fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact .contact-info .contact-address {
+  gap: 24px;
+}
+#fhm-map {
+  margin-bottom: 100px;
+}
+#fhm-map .container-fluid {
+  padding: 0;
+}
+#fhm-map .container-fluid iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/1;
+  filter: grayscale(50%) invert(92%) contrast(83%);
+}
+
+#fhm-footer {
+  position: unset;
+}
+
+@media (min-width: 1400px) {
+  #fhm-contact {
+    background-position: inherit;
+  }
+  #fhm-contact .contact-wrap .contact-main .contact-heading {
+    max-width: 659px;
+  }
+}
+@media (max-width: 991px) {
+  #fhm-contact .contact-wrap .contact-branch {
+    justify-content: center;
+  }
+  #fhm-map .container-fluid {
+    padding: 0;
+  }
+}
+@media (max-width: 575px) {
+  #fhm-contact .contact-wrap {
+    padding: 30px 0;
+  }
+  #fhm-contact .contact-wrap .contact-main .contact-form .form-control {
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  #fhm-contact .contact-wrap .contact-main .contact-form .form-control::-moz-placeholder {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  #fhm-contact .contact-wrap .placeholder, #fhm-contact .contact-wrap .contact-main .contact-form .form-control::placeholder {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  #fhm-contact .contact-wrap .contact-branch .branch-detail {
+    padding-left: 20px;
+  }
+  #fhm-contact .contact-wrap .contact-branch .h5, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-location .location-info h5, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact .contact-info h5 {
+    color: #ffffff;
+    font-family: Helvetica-light, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.027px;
+  }
+  #fhm-contact .contact-wrap .contact-branch .a, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-location .location-info a, #fhm-contact .contact-wrap .contact-branch .branch-detail .branch-detail-contact .contact-info .contact-address a {
+    color: #ffffff;
+    font-family: Helvetica-light, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: 0.03px;
+  }
+  #fhm-map {
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=contact.css.map */
