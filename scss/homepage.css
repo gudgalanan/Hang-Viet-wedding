@@ -299,6 +299,7 @@
   margin: 8px 0 10px;
 }
 #fhm-services .services-main {
+  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 46px;
@@ -562,7 +563,7 @@
 }
 
 #fhm-project {
-  margin-top: 506px;
+  margin-top: 160px;
   margin-bottom: 150px;
 }
 #fhm-project .project-heading {
@@ -648,6 +649,8 @@
   margin-bottom: 100px;
 }
 #fhm-body-banner img {
+  -o-object-position: top;
+     object-position: top;
   width: 100%;
   height: auto;
   aspect-ratio: 401/190;

@@ -161,6 +161,7 @@
   }
 
   .services-main {
+    margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 46px;
@@ -480,7 +481,7 @@
 
 // <!-- START PROJECTS -->
 #fhm-project {
-  margin-top: 506px;
+  margin-top: 160px;
   margin-bottom: 150px;
 
   .project-heading {
@@ -588,6 +589,7 @@
   margin-bottom: 100px;
 
   img {
+    object-position: top;
     width: 100%;
     height: auto;
     aspect-ratio: 401/190;
