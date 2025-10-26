@@ -373,7 +373,7 @@
       border-top: 1px solid rgba(255, 255, 255, 0.6);
       border-bottom: 1px solid rgba(255, 255, 255, 0.6);
       padding: 10px 0;
-      max-width: 500px;
+      max-width: 800px;
       margin: 0 auto;
 
       .row {
@@ -398,18 +398,11 @@
       }
     }
 
-    .lunar-date {
-      font-style: italic;
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.8);
-      margin: 10px 0 16px;
-    }
-
     .location {
       border-top: 1px solid rgba(255, 255, 255, 0.6);
       border-bottom: 1px solid rgba(255, 255, 255, 0.6);
       padding: 12px 0;
-      max-width: 500px;
+      max-width: 800px;
       margin: 0 auto 24px;
 
       .place {
@@ -427,11 +420,10 @@
     }
 
     .family-info {
-      display: flex;
-      justify-content: center;
       gap: 40px;
       padding-top: 16px;
       margin-top: 16px;
+      max-width: 800px;
 
       .family {
         h5 {
@@ -945,7 +937,6 @@
 
         .service-item-wrap {
           padding: 20px;
-          aspect-ratio: 1/1.5;
 
           .services-item-content h5 {
             margin: 35px 0 10px;
