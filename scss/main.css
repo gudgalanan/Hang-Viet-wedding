@@ -79,7 +79,7 @@
   height: 100%;
   top: -100%;
   left: 0;
-  background: #c78410;
+  background: rgba(255, 93, 239, 0.662745098);
   z-index: -1;
   transition: all 0.35s;
 }
@@ -90,7 +90,7 @@
   transition-delay: 0.2s;
 }
 .hover-button2:hover:before, .hover-button2:hover:after {
-  border-color: #c78410;
+  border-color: rgba(255, 93, 239, 0.662745098);
   top: 0;
 }
 
@@ -101,10 +101,10 @@
   transition: all 0.4s ease;
 }
 .hover-link:hover, #fhm-footer .footer-list .footer-item a:hover, #fhm-footer .footer-list .footer-logo:hover, #fhm-header .header-logo:hover {
-  color: #c78410;
+  color: rgba(255, 93, 239, 0.662745098);
 }
 .hover-link:hover svg path, #fhm-footer .footer-list .footer-item a:hover svg path, #fhm-footer .footer-list .footer-logo:hover svg path, #fhm-header .header-logo:hover svg path {
-  fill: #c78410;
+  fill: rgba(255, 93, 239, 0.662745098);
 }
 
 .hover-img img {
@@ -299,18 +299,18 @@ button:focus-visible {
   bottom: -3px;
 }
 #fhm-header .header-content .navbar .navbar-nav .nav-item a:hover {
-  color: #c78410;
+  color: rgba(255, 93, 239, 0.662745098);
   transition: color 0.3s ease;
 }
 #fhm-header .header-content .navbar .navbar-nav .nav-item a:hover:after, #fhm-header .header-content .navbar .navbar-nav .nav-item a:focus:after {
   width: 100%;
-  background-color: #c78410;
+  background-color: rgba(255, 93, 239, 0.662745098);
 }
 #fhm-header .header-content .navbar .navbar-nav .header-select {
   gap: 30px;
 }
 #fhm-header .header-content .navbar .navbar-nav .header-select a:hover svg path {
-  fill: #c78410;
+  fill: rgba(255, 93, 239, 0.662745098);
 }
 #fhm-header .header-content .navbar .navbar-nav .header-select .header-search-button {
   white-space: nowrap;
@@ -321,7 +321,7 @@ button:focus-visible {
   text-transform: uppercase;
   font-weight: 500;
   padding: 10px 15px;
-  background-color: #c78410;
+  background-color: #d274bc;
 }
 
 #fhm-firgures .firgures-item .firgures-number,
@@ -442,7 +442,7 @@ button:focus-visible {
   color: #ffffff;
 }
 #fhm-register .register-content .register-content-wrap #video-popup-container #video-popup-close:hover {
-  color: #c78410;
+  color: rgba(255, 93, 239, 0.662745098);
 }
 #fhm-register .register-content .register-content-wrap #video-popup-container #video-popup-iframe-container {
   position: absolute;
@@ -490,7 +490,7 @@ button:focus-visible {
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 28px;
-  background-color: #c78410;
+  background-color: rgba(255, 93, 239, 0.662745098);
   border-radius: 0px 0px 29px 29px;
   left: 50%;
   transform: translateX(-50%);
@@ -500,7 +500,7 @@ button:focus-visible {
   position: absolute;
   top: 0;
   left: -7px;
-  background-color: #c78410, rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 93, 239, 0.662745098), rgba(0, 0, 0, 0.5);
   border-top: 10px solid transparent;
   border-right: 7px solid rgba(0, 0, 0, 0.5);
 }
@@ -509,7 +509,7 @@ button:focus-visible {
   position: absolute;
   top: 0;
   right: -7px;
-  background-color: #c78410, rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 93, 239, 0.662745098), rgba(0, 0, 0, 0.5);
   border-top: 10px solid transparent;
   border-left: 7px solid rgba(0, 0, 0, 0.5);
 }
@@ -598,7 +598,7 @@ button:focus-visible {
 }
 #fhm-register .register-content .register-content-wrap .register-content-detail .register-detail-content .register-detail-info .register-detail-info-submit {
   margin-top: 10px;
-  background-color: #c78410;
+  background-color: rgba(255, 93, 239, 0.662745098);
   text-align: center;
   padding: 10px 0;
 }

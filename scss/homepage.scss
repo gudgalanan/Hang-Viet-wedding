@@ -2,7 +2,7 @@
 
 // <!-- START CAROUSEL-->
 #fhm-carousel {
-  padding-top: 500px;
+  padding-top: 100px;
   border-top: 1px solid var.$border-header;
 
   .container-fluid {
@@ -336,6 +336,10 @@
       width: 100%;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+      img {
+        aspect-ratio: 1/1;
+      }
     }
 
     .service-img {
@@ -645,7 +649,7 @@
 #fhm-map {
   margin-bottom: 100px;
 
-  .container-fluid {
+  .container {
     padding: 0;
 
     iframe {
@@ -941,6 +945,7 @@
 
         .service-item-wrap {
           padding: 20px;
+          aspect-ratio: 1/1.5;
 
           .services-item-content h5 {
             margin: 35px 0 10px;

@@ -80,7 +80,7 @@
   height: 100%;
   top: -100%;
   left: 0;
-  background: #c78410;
+  background: rgba(255, 93, 239, 0.662745098);
   z-index: -1;
   transition: all 0.35s;
 }
@@ -91,7 +91,7 @@
   transition-delay: 0.2s;
 }
 .hover-button2:hover:before, #fhm-discover .discover-banner .discover-banner-content-wrap a:hover:before, .hover-button2:hover:after, #fhm-discover .discover-banner .discover-banner-content-wrap a:hover:after {
-  border-color: #c78410;
+  border-color: rgba(255, 93, 239, 0.662745098);
   top: 0;
 }
 
@@ -102,10 +102,10 @@
   transition: all 0.4s ease;
 }
 .hover-link:hover {
-  color: #c78410;
+  color: rgba(255, 93, 239, 0.662745098);
 }
 .hover-link:hover svg path {
-  fill: #c78410;
+  fill: rgba(255, 93, 239, 0.662745098);
 }
 
 .hover-img img, #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item img {
@@ -168,7 +168,7 @@
   }
 }
 #fhm-carousel {
-  padding-top: 500px;
+  padding-top: 100px;
   border-top: 1px solid #343434;
 }
 #fhm-carousel .container-fluid {
@@ -283,7 +283,7 @@
 }
 #fhm-discover .discover-container .discover-container-wrap .discover-container-content .discover-link {
   padding: 18px 33px;
-  background-color: #c78410;
+  background-color: #d274bc;
   display: inline-block;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -450,6 +450,9 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+#fhm-services .services-main .service-item-wrap img {
+  aspect-ratio: 1/1;
+}
 #fhm-services .services-main .service-img {
   border-radius: 15px;
   width: 100%;
@@ -569,7 +572,7 @@
 #fhm-project .project-heading .project-heading-main .project-heading-link a {
   display: flex;
   align-items: center;
-  color: #c78410;
+  color: rgba(255, 93, 239, 0.662745098);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -681,7 +684,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #c78410;
+  background-color: rgba(255, 93, 239, 0.662745098);
   border: 3px solid #000;
   position: absolute;
   left: -25px;
@@ -698,10 +701,10 @@
 #fhm-map {
   margin-bottom: 100px;
 }
-#fhm-map .container-fluid {
+#fhm-map .container {
   padding: 0;
 }
-#fhm-map .container-fluid iframe {
+#fhm-map .container iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 2/1;
@@ -834,6 +837,7 @@
   }
   #fhm-services .services-main .services-item .service-item-wrap {
     padding: 20px;
+    aspect-ratio: 1/1.5;
   }
   #fhm-services .services-main .services-item .service-item-wrap .services-item-content h5 {
     margin: 35px 0 10px;
