@@ -2,9 +2,6 @@
 
 // <!-- START CAROUSEL-->
 #fhm-carousel {
-  padding-top: 100px;
-  border-top: 1px solid var.$border-header;
-
   .container-fluid {
     padding: 0;
 
@@ -300,7 +297,6 @@
 
 // <!-- START SERVICES -->
 #fhm-services {
-  margin-bottom: 100px;
 
   .services-heading {
     h6 {
@@ -406,7 +402,7 @@
       margin: 0 auto 24px;
 
       .place {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 16px;
         margin: 0;
         color: #fff;
@@ -419,9 +415,20 @@
       }
     }
 
-    iframe {
-      filter: grayscale(50%) invert(92%) contrast(83%);
+    .map {
+      display: flex;
+      flex-wrap: nowrap;
+
+      iframe {
+        padding: 0 10px;
+        flex: 1 1 50%;
+        width: 50%;
+        filter: grayscale(50%) invert(92%) contrast(83%);
+        border: 0;
+      }
+
     }
+
 
     .family-info {
       gap: 40px;
@@ -450,7 +457,7 @@
 
 // <!-- START PROJECTS -->
 #fhm-project {
-  margin-top: 160px;
+  margin-top: 100px;
   margin-bottom: 150px;
 
   .project-heading {
@@ -567,8 +574,6 @@
 
 // <!-- START GALLERY-->
 #fhm-gallery {
-  margin-bottom: 100px;
-
   .gallery-heading {
     margin-bottom: 47px;
 
@@ -640,24 +645,6 @@
     }
   }
 }
-
-// <!-- START MAP -->
-#fhm-map {
-  margin-bottom: 100px;
-
-  .container {
-    padding: 0;
-
-    iframe {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 2/1;
-      filter: grayscale(50%) invert(92%) contrast(83%);
-    }
-  }
-}
-
-// <!-- END MAP -->
 
 // <!-- RESPONSIVE-->
 @media (min-width: 1400px) {
@@ -763,10 +750,6 @@
     .services-main {
       column-gap: 30px;
       row-gap: 30px;
-
-      iframe {
-        max-width: 100%;
-      }
     }
   }
 
@@ -817,8 +800,6 @@
   }
 
   #fhm-project {
-    margin-top: 400px;
-
     .project-heading {
       h6 {
         @extend .h6;
@@ -879,12 +860,6 @@
     letter-spacing: 2px;
   }
 
-  #fhm-map {
-    .container-fluid {
-      padding: 0;
-    }
-  }
-
   #fhm-carousel {
     padding-top: 20px;
 
@@ -924,8 +899,6 @@
 
   #fhm-services {
     .services-heading {
-      // margin-bottom: 10px;
-
       h6 {
         @extend .h6-ipad;
       }
@@ -944,8 +917,6 @@
         padding: 0;
 
         .service-item-wrap {
-          padding: 20px;
-
           .services-item-content h5 {
             margin: 35px 0 10px;
           }
@@ -1026,7 +997,7 @@
   }
 
   #fhm-project {
-    margin-top: 220px;
+    margin-top: 100px;
 
     .project-heading {
       margin-bottom: 20px;
@@ -1106,6 +1077,8 @@
     }
   }
 
+
+
   #fhm-services {
     .services-heading {
       h3 {
@@ -1115,8 +1088,6 @@
 
     .services-item {
       .service-item-wrap {
-        padding: 15px;
-
         .services-item-content {
           h5 {
             margin: 25px 0 8px;
@@ -1172,7 +1143,7 @@
   }
 
   #fhm-project {
-    margin: 170px 0 60px;
+    margin: 80px 0 60px;
 
     .project-heading {
       .project-heading-main {
@@ -1184,8 +1155,6 @@
   }
 
   #fhm-gallery {
-    margin-bottom: 60px;
-
     .gallery-heading {
       h3 {
         @extend .h3-ipad-mini;
@@ -1254,8 +1223,6 @@
   }
 
   #fhm-project {
-    margin-top: 270px;
-
     .project-heading {
       .project-heading-main {
         h3 {
@@ -1322,15 +1289,23 @@
     font-weight: 300;
   }
 
-  #fhm-map {
-    margin-bottom: 50px;
-  }
-
   #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item {
     margin-right: 5px;
 
     img {
       width: 125px;
+    }
+  }
+
+  .location,
+  .family-info,
+  .info-table {
+    h5 {
+      @extend .h3-s;
+    }
+
+    p {
+      font-size: 12px !important;
     }
   }
 
@@ -1386,7 +1361,6 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 10px;
         }
       }
     }
@@ -1440,7 +1414,6 @@
   }
 
   #fhm-project {
-    margin-top: 360px;
     margin-bottom: 17px;
 
     .project-heading {
@@ -1513,7 +1486,6 @@
 
     .services-item {
       .service-item-wrap {
-        padding: 15px;
 
         .services-item-content {
           h5 {
@@ -1570,8 +1542,6 @@
   }
 
   #fhm-project {
-    margin-top: 400px;
-
     .project-heading {
       .project-heading-main {
         h3 {

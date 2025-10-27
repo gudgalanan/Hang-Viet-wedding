@@ -167,10 +167,6 @@
     opacity: 1;
   }
 }
-#fhm-carousel {
-  padding-top: 100px;
-  border-top: 1px solid #343434;
-}
 #fhm-carousel .container-fluid {
   padding: 0;
 }
@@ -415,9 +411,6 @@
   text-transform: uppercase;
 }
 
-#fhm-services {
-  margin-bottom: 100px;
-}
 #fhm-services .services-heading h6 {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
@@ -507,7 +500,7 @@
   margin: 0 auto 24px;
 }
 #fhm-services .invitation-detail .location .place {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   margin: 0;
   color: #fff;
@@ -517,8 +510,16 @@
   color: rgba(255, 255, 255, 0.8);
   margin-top: 4px;
 }
-#fhm-services .invitation-detail iframe {
+#fhm-services .invitation-detail .map {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#fhm-services .invitation-detail .map iframe {
+  padding: 0 10px;
+  flex: 1 1 50%;
+  width: 50%;
   filter: grayscale(50%) invert(92%) contrast(83%);
+  border: 0;
 }
 #fhm-services .invitation-detail .family-info {
   gap: 40px;
@@ -539,7 +540,7 @@
 }
 
 #fhm-project {
-  margin-top: 160px;
+  margin-top: 100px;
   margin-bottom: 150px;
 }
 #fhm-project .project-heading {
@@ -632,9 +633,6 @@
   aspect-ratio: 401/190;
 }
 
-#fhm-gallery {
-  margin-bottom: 100px;
-}
 #fhm-gallery .gallery-heading {
   margin-bottom: 47px;
 }
@@ -694,19 +692,6 @@
   transform: translateY(-50%);
 }
 
-#fhm-map {
-  margin-bottom: 100px;
-}
-#fhm-map .container {
-  padding: 0;
-}
-#fhm-map .container iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2/1;
-  filter: grayscale(50%) invert(92%) contrast(83%);
-}
-
 @media (min-width: 1400px) {
   #fhm-intro .intro-content p {
     width: 430px;
@@ -762,9 +747,6 @@
          column-gap: 30px;
     row-gap: 30px;
   }
-  #fhm-services .services-main iframe {
-    max-width: 100%;
-  }
   #fhm-discover .discover-banner .discover-banner-content-wrap {
     top: 20%;
   }
@@ -773,9 +755,6 @@
   }
   #fhm-discover .discover-container .discover-container-wrap .discover-container-img a {
     display: none;
-  }
-  #fhm-project {
-    margin-top: 400px;
   }
   #fhm-gallery .gallery-container {
     margin-left: 0;
@@ -804,9 +783,6 @@
     font-size: 12px;
     letter-spacing: 2px;
   }
-  #fhm-map .container-fluid {
-    padding: 0;
-  }
   #fhm-carousel {
     padding-top: 20px;
   }
@@ -833,9 +809,6 @@
   }
   #fhm-services .services-main .services-item {
     padding: 0;
-  }
-  #fhm-services .services-main .services-item .service-item-wrap {
-    padding: 20px;
   }
   #fhm-services .services-main .services-item .service-item-wrap .services-item-content h5 {
     margin: 35px 0 10px;
@@ -870,7 +843,7 @@
     padding: 25px;
   }
   #fhm-project {
-    margin-top: 220px;
+    margin-top: 100px;
   }
   #fhm-project .project-heading {
     margin-bottom: 20px;
@@ -904,9 +877,6 @@
   #fhm-intro .intro-content {
     margin: 150px 0;
   }
-  #fhm-services .services-item .service-item-wrap {
-    padding: 15px;
-  }
   #fhm-services .services-item .service-item-wrap .services-item-content h5 {
     margin: 25px 0 8px;
   }
@@ -924,10 +894,7 @@
     margin-bottom: 60px;
   }
   #fhm-project {
-    margin: 170px 0 60px;
-  }
-  #fhm-gallery {
-    margin-bottom: 60px;
+    margin: 80px 0 60px;
   }
 }
 @media (max-width: 767px) {
@@ -951,9 +918,6 @@
     padding: 15px;
     height: -moz-fit-content;
     height: fit-content;
-  }
-  #fhm-project {
-    margin-top: 270px;
   }
   #fhm-project .project-list {
     row-gap: 20px;
@@ -986,7 +950,9 @@
     font-size: 10px;
     line-height: 16px;
   }
-  .h3-s, #fhm-gallery .gallery-heading h3, #fhm-project .project-heading .project-heading-main h3, #fhm-discover .discover-container .discover-container-wrap .discover-container-content h3, #fhm-discover .discover-banner .discover-banner-content-wrap h2, #fhm-services .services-heading h3, #fhm-intro .intro-content h2 {
+  .h3-s, #fhm-gallery .gallery-heading h3, #fhm-project .project-heading .project-heading-main h3, #fhm-discover .discover-container .discover-container-wrap .discover-container-content h3, #fhm-discover .discover-banner .discover-banner-content-wrap h2, #fhm-services .services-heading h3, #fhm-intro .intro-content h2, .location h5,
+  .family-info h5,
+  .info-table h5 {
     font-size: 23px;
     line-height: 28px;
   }
@@ -996,14 +962,16 @@
     letter-spacing: 2px;
     font-weight: 300;
   }
-  #fhm-map {
-    margin-bottom: 50px;
-  }
   #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item {
     margin-right: 5px;
   }
   #fhm-carousel .container-fluid .carousel-wrap .carousel-wrap-list .carousel-wrap-item img {
     width: 125px;
+  }
+  .location p,
+  .family-info p,
+  .info-table p {
+    font-size: 12px !important;
   }
   #fhm-intro {
     display: flex;
@@ -1039,7 +1007,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
   }
   #fhm-discover .discover-banner .discover-banner-content-wrap h2 {
     margin-bottom: 15px;
@@ -1062,7 +1029,6 @@
     height: 200px;
   }
   #fhm-project {
-    margin-top: 360px;
     margin-bottom: 17px;
   }
   #fhm-project .project-list {
@@ -1094,9 +1060,6 @@
     font-size: 20px;
     line-height: 28px;
   }
-  #fhm-services .services-item .service-item-wrap {
-    padding: 15px;
-  }
   #fhm-services .services-item .service-item-wrap .services-item-content h5 {
     font-size: 14px;
     margin: 10px 0 5px;
@@ -1124,9 +1087,6 @@
   }
   #fhm-discover .discover-container .discover-container-wrap .discover-container-img img {
     height: 200px;
-  }
-  #fhm-project {
-    margin-top: 400px;
   }
   #fhm-project .project-list .project-item .project-item-info {
     padding: 3px 7px;
