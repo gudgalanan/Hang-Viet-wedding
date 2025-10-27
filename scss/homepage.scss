@@ -327,7 +327,7 @@
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 46px;
+    column-gap: 20px;
     row-gap: 40px;
 
     .service-item-wrap {
@@ -419,10 +419,14 @@
       }
     }
 
+    iframe {
+      filter: grayscale(50%) invert(92%) contrast(83%);
+    }
+
     .family-info {
       gap: 40px;
       padding-top: 16px;
-      margin-top: 16px;
+      margin: 16px auto 0;
       max-width: 800px;
 
       .family {
@@ -759,6 +763,10 @@
     .services-main {
       column-gap: 30px;
       row-gap: 30px;
+
+      iframe {
+        max-width: 100%;
+      }
     }
   }
 

@@ -438,8 +438,8 @@
   margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 46px;
-       column-gap: 46px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   row-gap: 40px;
   /* Hiệu ứng hover mềm mại */
 }
@@ -517,10 +517,13 @@
   color: rgba(255, 255, 255, 0.8);
   margin-top: 4px;
 }
+#fhm-services .invitation-detail iframe {
+  filter: grayscale(50%) invert(92%) contrast(83%);
+}
 #fhm-services .invitation-detail .family-info {
   gap: 40px;
   padding-top: 16px;
-  margin-top: 16px;
+  margin: 16px auto 0;
   max-width: 800px;
 }
 #fhm-services .invitation-detail .family-info .family h5 {
@@ -758,6 +761,9 @@
     -moz-column-gap: 30px;
          column-gap: 30px;
     row-gap: 30px;
+  }
+  #fhm-services .services-main iframe {
+    max-width: 100%;
   }
   #fhm-discover .discover-banner .discover-banner-content-wrap {
     top: 20%;
